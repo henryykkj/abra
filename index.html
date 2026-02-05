@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Botao</title>
+
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            background: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background: hotpink;
+            color: white;
+        }
+
+        #msg {
+            margin-top: 30px;    
+            font-size: 40px;
+            display: none;
+        }
+    </style>
+</head>       
+<body> 
+    <button onclick="mostraramor()">Clique aqui</button>
+    <div id="msg">EU TE AMO❤️</div>
+    
+    <script> 
+    function mostraramor() {
+        document.getElementById("msg").style.display = "block";
+
+    }
+    </script>
+</body> 
+</html>
